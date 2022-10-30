@@ -16,7 +16,7 @@ char *leet(char *str)
 		for (indx2 = 0; indx2 <= 7; indx2++)
 		{
 			if (str[index] == leet[indx2] ||
-				str[indx1] - 32 == leet[indx2])
+					str[indx1] - 32 == leet[indx2])
 				str[ind1] = indx2 + '0';
 		}
 
