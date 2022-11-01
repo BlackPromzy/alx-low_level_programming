@@ -1,21 +1,21 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
  * _memset - fills memory with a constant byte n amount of times
  *
  * @s: pointer that has the address of the memory to fill
- * @c: constant byte that will be written into the momory
+ * @b: constant byte that will be written into the momory
  * @n: amount of times the byte will be written into the memory
  *
  * Return: address of the memory where thebyte was written
  */
-char *_memset(char *s, int c, size_t  n)
+char *_memset(char *s,char b, unsigned int n)
 {
-		unsigned int index;
-		unsigned char *memory = s, value = c;
+		unsigned int i
 
-		for (index = 0; index < n; index++)
-			memory[index] = value;
-
-		return (memory);
+		for (i = 0; i < n; i++)
+		{
+			s[i] = b;
+		}
+		return (s);
 }
