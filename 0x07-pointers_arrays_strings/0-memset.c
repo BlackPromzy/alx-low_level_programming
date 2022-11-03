@@ -1,20 +1,20 @@
 #include "main.h"
 
 /**
-* _memset - fill memory .
-* @s: pointer
-* @b: hexadecimal number
-* @n: n bytes
-* Return: pointer
-*/
-char *_memset(char *s, char *b, unsigned int n)
+ * _memset - Entry point
+ * Desc: Entry
+ *@s: pointer
+ *@b: string
+ *@n: number the bytes
+ * Return: Always 0 (Success)
+ */
+char *_memset(char *s, char b, unsigned int n)
 {
-	unsigned char *u = (unsigned char *) s;
+	unsigned int i;
 
-	while (n-- > 0x00)
+	for (i = 0 ; i < n ; i++)
 	{
-		*u++ = b;
+		s[i] = b;
 	}
 	return (s);
 }
-
