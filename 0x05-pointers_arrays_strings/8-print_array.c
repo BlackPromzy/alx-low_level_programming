@@ -1,23 +1,26 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * print_array - Entry point
- * Desc: Entry
+ * print_array - print an array element
  *@a: pointer
- *@n: var
- * Return: Always 0 (Success)
+ *@n: limit
  */
 void print_array(int *a, int n)
 {
-	int i;
+	int i = 0;
 
-	for (i = 0 ; i < n ; i++)
+	while (i < n)
 	{
-		printf("%d", *(a + i));
-		if (i < (n - 1))
+		if (i == (n - 1))
 		{
-			printf(", ");
+			printf("%d", a[i]);
 		}
+		else
+		{
+			printf("%d, ", a[i]);
+		}
+		i++;
 	}
 	printf("\n");
 }
