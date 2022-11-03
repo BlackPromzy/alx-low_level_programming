@@ -3,8 +3,8 @@
 /**
  * print_rev - Entry point
  * Desc: Entry
- * @s: pointer
- * Return: Always 0 (success)
+ *@s: pointer
+ * Return: Always 0 (Success)
  */
 void print_rev(char *s)
 {
@@ -16,7 +16,7 @@ void print_rev(char *s)
 	}
 	for (j = i - 1 ; j >= 0 ; j--)
 	{
-	_putchar(s[j]);
+		_putchar(s[j]);
 	}
-	_putchar(*s);
+	_putchar('\n');
 }
