@@ -19,10 +19,10 @@ void print_diagsums(int *a, int size)
 	{
 		for (j = 0; j < size; j++)
 		{
-			k = (i * size) + j
+			k = (i * size) + j;
 			if (i == j)
 			{
-				dg_r = dg_r + a[k]
+				dg_r = dg_r + a[k];
 			}
 			if ((i + j) == (size - 1))
 			{
