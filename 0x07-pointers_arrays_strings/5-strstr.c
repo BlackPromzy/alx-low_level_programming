@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * _strstr - Entry point
- * Desc: Entry
- *@haystack: pointer
- *@needle: pointer
- * Return: Always 0 (Success)
- */
+* _strstr - locates s substring.
+*@haystack: char array
+*@needle: char array (password)
+*
+* Return: array
+*/
 char *_strstr(char *haystack, char *needle)
 {
 	while (*haystack != '\0')
