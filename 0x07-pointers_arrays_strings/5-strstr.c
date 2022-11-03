@@ -9,20 +9,21 @@
 */
 char *_strstr(char *haystack, char *needle)
 {
-	while (*haystack != '\0')
-	{
-		char *duplicate = haystack;
+	int i;
+	int j;
+	int k;
 
-		while (*haystack == *needle && *haystack != '\0' && *needle != '\0')
+	for (i = 0 ; haystack[i] ; i++)
+	{
+		for (k = i, j = 0 ; needle[j] != '\0' ; j++, k++)
 		{
-			needle++;
-			tack++;
+			if (haystack[k] != needle[j] || haystack[k] == '\0'
+					break;
+
+		if (needle[j] == 0)
 		}
-		if (!*needle != '\0')
-		{
-			return (duplicate);
+			return (haystack + i)
 		}
-		haystack++;
 	}
 	return (0);
 }
