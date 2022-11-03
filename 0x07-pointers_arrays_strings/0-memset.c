@@ -1,13 +1,13 @@
-#include "helberton.h"
+#include "main.h"
 
 /**
-* _memset - fill memory with a constant byte.
-* @s: memory area to fill.
-* @b: hexadecimal number.
-* @n: n bytes of memory area to fill.
-* Return: a pointer to the memory area filled.
+* _memset - fill memory .
+* @s: pointer
+* @b: hexadecimal number
+* @n: n bytes
+* Return: pointer
 */
-void *_memset(char *s, char *b, unsigned int n)
+char *_memset(char *s, char *b, unsigned int n)
 {
 	unsigned char *u = (unsigned char *) s;
 
@@ -17,3 +17,4 @@ void *_memset(char *s, char *b, unsigned int n)
 	}
 	return (s);
 }
+
