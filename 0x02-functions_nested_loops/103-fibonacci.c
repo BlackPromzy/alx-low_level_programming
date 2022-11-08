@@ -13,7 +13,7 @@ int main(void)
 	n = 1;
 	m = 2;
 	e = 2;
-	l = 400000;
+	l = 4000000;
 	c = 0;
 	while (c <= l)
 	{
