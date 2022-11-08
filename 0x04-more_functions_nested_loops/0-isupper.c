@@ -1,19 +1,23 @@
 #include "main.h"
 
 /**
- * _isupper - Entry point
- * Desc: Entry
- * @c: variable text
- * Return: Always 0
+ * _isupper - returns 1 if uppercase, 0 otherwise
+ * @c: Input parameter in ASCII
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
  */
 int _isupper(int c)
 {
-	if (c >= 'A' && <= 'Z')
+	int i;
+
+	if ((c > 64) && (c < 91))
 	{
-		return (1);
+		i = 1;
 	}
 	else
 	{
-		return (0);
+		i = 0;
 	}
+	return (i);
 }
