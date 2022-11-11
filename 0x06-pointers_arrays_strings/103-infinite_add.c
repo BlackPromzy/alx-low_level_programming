@@ -8,7 +8,6 @@
  * @size_r: size of buffer
  *
  * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
  */
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
