@@ -1,7 +1,5 @@
  #include "main.h"
 
-char *add_strings(char *n1, char *n2, char *r, int r_index);
-
 /**
  * add_strings - Adds the numbers stored in two strings.
  * @n1: The string containing the first number to be added.
