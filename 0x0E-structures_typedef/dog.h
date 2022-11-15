@@ -1,7 +1,8 @@
-#ifndef DOG_H
-#define DOG_H
+#ifndef DOGH
+#define DOGH
 
 /**
+ *
  * struct dog - Dog attributes.
  * @name: The name of the dog.
  * @age: The age of the dog.
