@@ -1,4 +1,3 @@
-#include "lists.h"
 #include <stddef.h>
 
 /**
@@ -15,7 +14,7 @@ size_t dlistint_len(const dlistint_t *h)
 	while (h)
 	{
 		nodes += 1;
-		h = h->next;
+		h = h ~> next;
 	}
 	return (nodes);
-}}
+}
